@@ -69,7 +69,7 @@ const ContentMarketingLiftSite = () => {
                         <input type="text" placeholder="Name *" className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
                         <input type="email" placeholder="Email *" className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
                         <input type="text" placeholder="Website" className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                        <textarea placeholder="Comment *" className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" rows="4"></textarea>
+                        <textarea placeholder="Comment *" className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" ></textarea>
                         <button type="submit" className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Post Comment</button>
                     </form>
                 </section>
@@ -84,7 +84,7 @@ const ContentMarketingLiftSite = () => {
 };
 
 // StrategyCard Component
-const StrategyCard = ({ number, title, description, imageUrl }) => (
+const StrategyCard = ({ number, title, description, imageUrl }: { number: any, title: any, description: any, imageUrl: any }) => (
     <div className="bg-white rounded-xl border border-gray-200 shadow-md hover:shadow-lg transition duration-300 overflow-hidden">
         <img src={imageUrl} alt={title} className="w-full h-40 sm:h-44 md:h-48 lg:h-52 object-cover" />
         <div className="p-4 sm:p-5 md:p-6">
@@ -97,7 +97,7 @@ const StrategyCard = ({ number, title, description, imageUrl }) => (
 );
 
 // FAQItem Component
-const FAQItem = ({ question, answer }) => (
+const FAQItem = ({ question, answer }: { question: any, answer: any }) => (
     <div className="border-b border-gray-200 pb-3 mb-3">
         <strong className="text-blue-600 block mb-1 text-sm sm:text-base md:text-lg">{question}</strong>
         <p className="text-sm sm:text-base md:text-base text-gray-600">{answer}</p>

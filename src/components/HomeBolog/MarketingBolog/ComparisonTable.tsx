@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const comparisonData = [
     { feature: "সংজ্ঞা (Definition)", market: "পণ্য বা পরিষেবার জন্য ক্রেতা এবং বিক্রেতাদের মধ্যে স্থান", marketing: "পণ্য বা পরিষেবার প্রচার ও বিক্রয় প্রক্রিয়া" },

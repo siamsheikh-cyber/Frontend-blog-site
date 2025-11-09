@@ -36,9 +36,9 @@ const profileData = {
 };
 
 const AboutMeLiftSite = () => {
-    const renderContent = (htmlContent) => {
+    const renderContent = (htmlContent: any) => {
         const parts = htmlContent.split('**');
-        return parts.map((part, index) => {
+        return parts.map((part: any, index: any) => {
             if (index % 2 === 1) {
                 return <strong key={index} className="text-orange-600 dark:text-orange-400">{part}</strong>;
             }

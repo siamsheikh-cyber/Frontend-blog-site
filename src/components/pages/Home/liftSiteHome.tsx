@@ -94,9 +94,9 @@ const blogPosts = [
 // 2. Component using map function
 function LiftSiteHome() {
     // Component to render categories with a separator
-    const CategoryLinks = ({ categories }) => (
+    const CategoryLinks = ({ categories }: { categories: any }) => (
         <span className="text-[10px] cursor-pointer text-[#FF4500] font-bold uppercase">
-            {categories.map((cats, catIndexs) => (
+            {categories.map((cats: any, catIndexs: any) => (
                 <React.Fragment key={cats.link}>
                     {catIndexs > 0 && " | "}
                     <Link to={cats.link}>{cats.name}</Link>

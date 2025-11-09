@@ -15,7 +15,7 @@ function BestHostineCompineaBolog() {
     });
 
     // 2. Handle input changes and update state
-    const handleChange = (e) => {
+    const handleChange = (e: any) => {
         const { name, value, type, checked } = e.target;
         setCommentData((prevData) => ({
             ...prevData,
@@ -24,7 +24,7 @@ function BestHostineCompineaBolog() {
     };
 
     // 3. Handle form submission
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
 
         // Basic validation check
