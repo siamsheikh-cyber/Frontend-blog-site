@@ -1,7 +1,3 @@
-
-
-
-
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
@@ -31,7 +27,7 @@ function Hider() {
                         alt="logo"
                     />
                     <span className="text-2xl md:text-3xl font-extrabold bg-gradient-to-r from-indigo-500 via-pink-500 to-yellow-400 bg-clip-text text-transparent">
-                        আইমান রহমান
+                        দেখোজানো
                     </span>
                 </div>
 
